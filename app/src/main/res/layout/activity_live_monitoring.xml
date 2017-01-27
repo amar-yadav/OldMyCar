@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_live_monitoring"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="50dp"
+    tools:context="com.example.amar.mycar.LiveMonitoring"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="131dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/ll_left">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:text="RPM"
+            android:ems="10"
+            android:id="@+id/rpm_textVu"
+            android:layout_weight=".5"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:text="Speed"
+            android:ems="10"
+            android:id="@+id/speed_textVu"
+            android:layout_weight=".5"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_right">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/rpm_meter"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight=".5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/speed_meter"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight=".5" />
+    </LinearLayout>
+</LinearLayout>
